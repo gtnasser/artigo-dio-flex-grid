@@ -1,8 +1,9 @@
 # CSS Flexbox ou Grid Layout? Entenda as Diferenças e Escolha a Melhor Opção
 
-No desenvolvimento de páginas HTML, um dos grandes desafios sempre foi a programação de layouts responsivos e flexíveis utilizando somente CSS. Era necessário utilizar *float*, *position*, *inline-block*, ou a combinação destes controles, apesar de algumas vezes se utilizar erroneamente a tag *<TABLE>* para formatar o layout.
 
-Com o avanço do CSS foram introduzidas novas ferramentas poderosas que facilitam a tarefa de organizar e dispor elementos na página, mais precisamente o CSS Grid Layout e o Flex Layout.
+No desenvolvimento de páginas HTML, um dos grandes desafios sempre foi a programação de layouts responsivos e flexíveis utilizando somente CSS. Era necessário utilizar *float*, *position*, *inline-block*, ou a combinação destes controles, apesar de algumas vezes se utilizar erroneamente a tag *TABLE* para formatar o layout.
+
+Com o avanço do CSS foram introduzidas novas ferramentas poderosas que facilitam a tarefa de organizar e dispor elementos na página, mais precisamente o **CSS Grid Layout** e o **Flex Layout**.
 
 Neste artigo, vamos explorar as características fundamentais de ambos os métodos de controle do layout e do seu conteúdo, e demonstrar como esses poderosos recursos do CSS podem transformar a maneira como você constrói suas páginas web.
 
