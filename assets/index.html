@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Verdana;
+            font-size: 12px;
+        }
+
+        .grid-container{
+            display: grid;
+            --color: white;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-areas: "navbar navbar" "menu main" "footer footer";
+        }
+
+        header{
+            grid-area: navbar;
+            padding: 5px;
+            border: solid 3px darkmagenta;
+            background-color: rgba(139, 0, 139, .15);
+        }
+
+        aside{
+            grid-area: menu;
+            padding: 5px;
+            border: solid 3px darkblue;
+            background-color: rgba(0, 0, 139, .15);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        main{
+            grid-area: main;
+            padding: 5px;
+            border: solid 3px darkgreen;
+            background-color: rgba(0, 100, 0, .15);
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 5px;
+        }
+
+        footer{
+            padding: 5px;
+            grid-area: footer;
+            border: solid 3px darkorange;
+            background-color: rgba(255, 140, 0, .15);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            border: solid 1px darkmagenta;
+            color: darkmagenta;
+            padding: 5px 2px;
+        }
+
+        aside a{
+            text-decoration: none;
+            border: solid 1px darkblue;
+            padding: 2px 5px;
+        }
+
+        .block{
+            width: 70px;
+            padding: 10px;
+            border: solid 1px darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container" >
+        <header>
+            <nav class="navbar">
+                <div class="group">
+                    <a href="#">Home</a>
+                    <a href="#">Feature#1</a>
+                    <a href="#">Feature#2</a>
+                </div>
+                <div class="group">
+                    <a href="#">About</a>
+                </div>
+                <div class="group">
+                    <a href="#">Logoff</a>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+        </aside>
+        <main>
+            <div class="block">Block #01</div>
+            <div class="block">Block #02</div>
+            <div class="block">Block #03</div>
+            <div class="block">Block #04</div>
+            <div class="block">Block #05</div>
+            <div class="block">Block #06</div>
+            <div class="block">Block #07</div>
+            <div class="block">Block #08</div>
+            <div class="block">Block #09</div>
+            <div class="block">Block #10</div>
+            <div class="block">Block #11</div>
+            <div class="block">Block #12</div>
+            <div class="block">Block #13</div>
+            <div class="block">Block #14</div>
+            <div class="block">Block #15</div>
+            <div class="block">Block #16</div>
+            <div class="block">Block #17</div>
+            <div class="block">Block #18</div>
+        </main>
+        <footer>
+            <small>(c)2024 by Giba</small>
+        </footer>
+    </div>
+
+
+<!--
+
+
+
+
+
+
+
+    <article>article</article>
+
+
+
+        <article>
+          <h2>Red Delicious</h2>
+          <p>
+            These bright red apples are the most common found in many supermarkets.
+          </p>
+          <p>…</p>
+          <p>…</p>
+        </article>
+
+        <article>
+          <h2>Granny Smith</h2>
+          <p>These juicy, green apples make a great filling for apple pies.</p>
+          <p>…</p>
+          <p>…</p>
+        </article>
+ -->
+
+
+</body>
+</html>
