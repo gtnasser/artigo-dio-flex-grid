@@ -33,7 +33,7 @@ Devemos usar o *grid* para definir o template de uma página, delimitando áreas
 
 Assim fica fácil redefinir o layout (responsividade, por exemplo) ajustando o containeres *grid* nas *media queries* sem ter que ajustar todos os elementos.
 
->![Exemplo 1](./assets/image1.png "exemplo: definindo areas com grid") *Fig1 -* Exemplo: definindo áreas com grid.
+>![Fig1](./assets/image1.png "Definindo areas com grid") *Fig1 -* Definindo áreas com *grid*.
 
 Combinando com o uso de elementos *flex*, fica fácil definir designs preenchendo as áreas com múltiplas linhas ou múltiplas colunas.
 
@@ -43,7 +43,21 @@ Há casos em que devemos aplicar a lógica de *grid* dentro de componentes ou de
 
 O *flex* é perfeito para enfileirar elementos de diversos tamanhos. Nele o container define a direção na qual os elementos vão se enfileirar e como eles devem se comportar ao atingir as beiradas do container. Também são definidos como os itens são alinhados independente do tamanho individual de cada item.
 
->![Exemplo 2](./assets/image2.png "exemplo: formatando os componentes com o flex") *Fig1 -* Exemplo: formatando os componentes com o flex.
+>![Fig2](./assets/image2.png "Formatando os componentes com o flex") *Fig2 -* Formatando os componentes com *flex*.
+
+Acesse o código deste exemplo em [codepen.io](https://codepen.io/gtnasser/pen/PorbeGY)
+
+## Melhoria pós publicação:
+
+Muitos me questionaram por que o container *main* é extrapolado quando a quantidade de elementos cresce, ou seja, os elementos continuam seguindo a orientação da regra do *flex* mas são desenhados fora das bordas do container, quando deveriam ficar sempre dentro do container.
+
+>![Fig3](./assets/image3.png "Elementos extrapolando os limites do container") *Fig3 -* Elementos extrapolando os limites do *container*.
+
+O tamanho do container não expande por causa das definições do *grid*, e uma maneira simples e rápida de resolver isso é incluir a propriedade ```overflow: auto;``` no estilo do container, assim é mostrado um *scrollbar* no container na direção que os elementos estão extrapolando o seu limite, mantendo assim a orientação da regra do *flex*.
+
+>![Fig4](./assets/image4.png "Elementos contidos nos limites do container") *Fig4 -* Elementos contidos nos limites do *container*.
+
+Acesse o código deste exemplo em [codepen.io](https://codepen.io/gtnasser/pen/gbYVVXM).
 
 ## Conclusão:
 
@@ -51,13 +65,7 @@ Simplificadamente podemos dizer que o *grid* (por agir de forma bidimensional) o
 
 Quando combinados os dois controles são poderosíssimos, e são praticamente complementares, obviamente que cada caso é um caso, mas uma boa análise permitirá entender como utilizá-los para que qualquer conteúdo possa ser publicado no layout desejado.
 
-Acesse o código deste artigo em [codepen.io](https://codepen.io/gtnasser/pen/PorbeGY) ou [Github](https://github.com/gtnasser/artigo-dio-flex-grid)
+Acesse o código completo deste e outros artigos em [Github](https://github.com/gtnasser/artigo-dio-flex-grid)
 
 Saiba mais sobre o autor em [Linkedin](https://www.linkedin.com/in/gilbertonasser/)
 
-<!--
-Ref:
-https://triangulo.dev/posts/css-grid-o-que-voce-precisa-saber/
-https://triangulo.dev/posts/guia-completo-flexbox/
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
--->
